@@ -1,0 +1,8 @@
+<h1>Welcome to the CMS Blog Site</h1>
+{{#each posts}}
+  <article>
+    <h2><a href="/post/{{this.id}}">{{this.title}}</a></h2>
+    <p>By {{this.user.username}} on {{this.createdAt}}</p>
+    <p>{{this.content}}</p>
+  </article>
+{{/each}}

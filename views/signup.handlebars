@@ -1,0 +1,8 @@
+<h1>{{#if (eq @this 'login')}}Login{{else}}Sign Up{{/if}}</h1>
+<form action="{{#if (eq @this 'login')}}/login{{else}}/signup{{/if}}" method="post">
+  <label for="username">Username:</label>
+  <input type="text" name="username" required>
+  <label for="password">Password:</label>
+  <input type="password" name="password" required>
+  <button type="submit">{{#if (eq @this 'login')}}Login{{else}}Sign Up{{/if}}</button>
+</form>
